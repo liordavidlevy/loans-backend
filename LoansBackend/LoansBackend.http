@@ -1,0 +1,8 @@
+@LoanBackend_HostAddress = http://localhost:5184
+
+Post {{LoanBackend_HostAddress}}/loans/
+Accept: application/json
+Body: {
+    dsad: dsa
+}
+###
