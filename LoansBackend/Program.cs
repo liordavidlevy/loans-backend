@@ -1,5 +1,6 @@
 using LoansBackend.Mappers;
 using LoansBackend.Repositories;
+using LoansBackend.RuleEngine;
 using LoansBackend.Services;
 using LoansBackend.Utils;
 
@@ -11,6 +12,7 @@ builder.Services.AddSingleton<ILoanRepository, LoanRepository>();
 
 builder.Services.AddSingleton<LoanFactory>();
 builder.Services.AddSingleton<LoanMapper>();
+builder.Services.AddSingleton<LoanIntrestRuleEngine>();
 builder.Services.AddSingleton<SequenceGenerator>();
 
 builder.Services.AddSingleton<IClientService, ClientService>();
