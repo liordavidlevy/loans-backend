@@ -10,11 +10,11 @@ namespace LoansBackend.RuleEngine
 
         public LoanIntrestRuleEngine()
         {
-            this._intrestRules = new List<ILoanIntrestRule>
-            {
+            this._intrestRules =
+            [
                 new PeriodLoanInterstRule(),
                 new AgeLoanIntrestRule()
-            };
+            ];
         }
 
         public double CalculateLoanIntrest(LoanCreateDTO loanDTO, int age)
